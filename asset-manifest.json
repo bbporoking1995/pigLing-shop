@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/pigLing-shop/static/css/main.9fab7722.css",
+    "main.js": "/pigLing-shop/static/js/main.03d8975e.js",
+    "static/media/View-2.png": "/pigLing-shop/static/media/View-2.b77c9fa2bc8e027b46bb.png",
+    "static/media/background_001.png": "/pigLing-shop/static/media/background_001.cfe77d932b51612ccd46.png",
+    "static/media/Room-4-p1.png": "/pigLing-shop/static/media/Room-4-p1.7df4697d1b7a37ec3cfc.png",
+    "static/media/Room-3-p3.png": "/pigLing-shop/static/media/Room-3-p3.9a0b1691907435b2095b.png",
+    "static/media/Room-3-p1.png": "/pigLing-shop/static/media/Room-3-p1.e4d3c6392a7f7c5b9689.png",
+    "static/media/background_003.png": "/pigLing-shop/static/media/background_003.21089b9ff001c0d211ee.png",
+    "static/media/background_006.png": "/pigLing-shop/static/media/background_006.b33ed73fd46391470393.png",
+    "static/media/background_004.png": "/pigLing-shop/static/media/background_004.28deaeb1179a242058d2.png",
+    "static/media/pic_1.png": "/pigLing-shop/static/media/pic_1.0c1e15152051c54e70a7.png",
+    "static/media/background_005.png": "/pigLing-shop/static/media/background_005.f98d125b3bb9b1ba046c.png",
+    "static/media/pigLing_Logo_transparent.png": "/pigLing-shop/static/media/pigLing_Logo_transparent.d57abcd8e88e0fad290f.png",
+    "static/media/HotelLogo_transparent.png": "/pigLing-shop/static/media/HotelLogo_transparent.dc47b79d8ebbd698440a.png",
+    "static/media/control_yorself.jpg": "/pigLing-shop/static/media/control_yorself.eb2878859f92432a553e.jpg",
+    "index.html": "/pigLing-shop/index.html",
+    "main.9fab7722.css.map": "/pigLing-shop/static/css/main.9fab7722.css.map",
+    "main.03d8975e.js.map": "/pigLing-shop/static/js/main.03d8975e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9fab7722.css",
+    "static/js/main.03d8975e.js"
+  ]
+}
