@@ -1,0 +1,105 @@
+.login_container {
+    height: 71vh;
+    background: linear-gradient(60deg,#ffad77 20%, #ff7777 50%, transparent 30%) center center/
+      100% 100%,url("../pic/background_003.png");
+    background-position-x: 100%;
+    backdrop-filter: blur(10px); 
+    .login_content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        height: 300px;
+        background: #fcf6c07c;
+        backdrop-filter: blur(10px); 
+        top: 20%;
+        left: 25%;
+        box-shadow: -3px 3px 3px #ff8b5d;
+        
+        h2 {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            text-shadow: -2px 0px 1px #000000, 0px 2px 1px #000000, 2px 0px 1px #000000, 0px -2px 1px #000000;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .account, .password {
+          display: flex;
+          align-items: center;
+        svg {
+          color: gray;
+        }
+        input {
+          font-size: 20px;
+          border: 0;
+          box-shadow: 3px 3px gray;
+          border-radius: 3px;
+          padding: 8px;
+          margin: 8px;
+          width: 200px;
+          height: 40px;
+        }
+      }
+
+        button {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffff;
+            font-size: 15px;
+            background-color: #ff776d;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+            padding-block: 0.5rem;
+            padding-inline: 1.25rem;
+            border-radius: 9999px;
+            margin-top: 10px;
+            gap: 10px;
+            font-weight: bold;
+            border: 3px solid #ffffff4d;
+            outline: none;
+            overflow: hidden;
+            cursor: pointer;
+            &:hover {
+                border-color: #fff9;
+            }
+          }
+
+          button:hover::before {
+            animation: shine 1.5s ease-out infinite;
+          }
+          
+          button::before {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100%;
+            background-image: linear-gradient(
+              120deg,
+              rgba(255, 255, 255, 0) 30%,
+              rgba(255, 255, 255, 0.8),
+              rgba(255, 255, 255, 0) 70%
+            );
+            top: 0;
+            left: -100px;
+            opacity: 0.6;
+          }
+          
+          @keyframes shine {
+            0% {
+              left: -100px;
+            }
+          
+            60% {
+              left: 100%;
+            }
+          
+            to {
+              left: 100%;
+            }
+          }
+    }
+}

@@ -1,0 +1,23 @@
+.homepage_container {
+    margin: 0 300px;
+    .slide {
+        margin: 50px 0;
+        align-items: flex-start;
+    }
+    .sell_item {
+        display: flex;  
+        align-items: center; 
+        justify-content: space-evenly;
+        border: 1px solid black;
+        a{
+            text-decoration: none;
+            color: palevioletred;
+            // width: 15%;
+        }
+    }
+    .hot_item{
+        color: white;
+        font-size: 30px;
+        text-shadow: -2px 0px 1px #e16b8c, 0px 2px 1px #e16b8c, 2px 0px 1px #e16b8c, 0px -2px 1px #e16b8c;
+    }
+}

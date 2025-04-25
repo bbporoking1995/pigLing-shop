@@ -1,0 +1,97 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "微軟正黑體", "Press Start 2P", monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #FEDFE1;
+}
+
+.topside {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 300px;
+  background: linear-gradient(25deg, #ffa6bb, transparent, #fae897);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3647058824);
+  position: sticky;
+  z-index: 999;
+  top: 0;
+}
+.topside .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topside .logo a {
+  width: 150px;
+}
+.topside .logo a img {
+  width: 100%;
+  vertical-align: bottom;
+}
+.topside ul {
+  display: flex;
+}
+.topside ul li {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+.topside ul li .unlogin {
+  margin: 1rem;
+}
+.topside ul li .unlogin .account_icon {
+  color: #60373E;
+}
+.topside ul li .unlogin .account_icon:hover {
+  color: darkgoldenrod;
+}
+.topside ul li a {
+  text-decoration: none;
+  color: #B5495B;
+}
+.topside ul li a:hover {
+  color: darkgoldenrod;
+}
+
+.cart_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logged_in {
+  margin-right: 15px;
+}
+.logged_in .login_icon {
+  color: #60373E;
+  margin-right: 15px;
+}
+.logged_in button {
+  all: unset;
+  cursor: pointer;
+}
+.logged_in button .logout_icon:hover {
+  color: darkgoldenrod;
+}
+.logged_in span {
+  font-family: "Press Start 2P", monospace;
+  color: #60373E;
+  font-size: 18px;
+}
+
+@media (width < 900px) {
+  .topside {
+    padding: 0;
+  }
+}/*# sourceMappingURL=App.css.map */

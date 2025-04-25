@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #113285;
+    color: white;
+    height: 21vh;
+    .pic {
+        width: 150px;
+        display: flex;
+    }
+    img {
+        width: 100%;
+    }
+}

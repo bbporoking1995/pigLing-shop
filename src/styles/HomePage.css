@@ -1,0 +1,22 @@
+.homepage_container {
+  margin: 0 300px;
+}
+.homepage_container .slide {
+  margin: 50px 0;
+  align-items: flex-start;
+}
+.homepage_container .sell_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid black;
+}
+.homepage_container .sell_item a {
+  text-decoration: none;
+  color: palevioletred;
+}
+.homepage_container .hot_item {
+  color: white;
+  font-size: 30px;
+  text-shadow: -2px 0px 1px #e16b8c, 0px 2px 1px #e16b8c, 2px 0px 1px #e16b8c, 0px -2px 1px #e16b8c;
+}/*# sourceMappingURL=HomePage.css.map */

@@ -1,0 +1,48 @@
+.sidebar h2 {
+  color: white;
+  text-shadow: -2px 0px 1px black, 0px 2px 1px black, 2px 0px 1px black, 0px -2px 1px black;
+  margin-bottom: 16px;
+}
+.sidebar .sidebar_content {
+  width: 200px;
+}
+.sidebar .sidebar_content li {
+  list-style-type: none;
+  color: #3b6492;
+  font-size: 18px;
+}
+.sidebar .sidebar_content button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: palevioletred;
+  margin: 15px 0;
+  cursor: pointer;
+}
+.sidebar .sidebar_content button:hover {
+  color: silver;
+}
+.sidebar .sidebar_list {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar .sidebar_list .sidebar_btn {
+  all: unset;
+  display: flex;
+  cursor: pointer;
+  margin: 15px 0;
+}
+.sidebar .sidebar_list .sidebar_btn svg {
+  transition: all ease 0.25s;
+  margin-right: 5px;
+}
+.sidebar .sidebar_list .sidebar_btn:hover .lucide-plus {
+  transform: rotate(0.5turn);
+}
+.sidebar .sidebar_list a {
+  text-decoration: none;
+}
+.sidebar .sidebar_list ul li {
+  margin-left: 30px;
+}/*# sourceMappingURL=Sidebar.css.map */

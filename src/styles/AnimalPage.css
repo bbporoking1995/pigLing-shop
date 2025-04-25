@@ -1,0 +1,20 @@
+.page {
+  margin: 30px 300px;
+}
+.page .page_content {
+  display: flex;
+}
+.page .page_content .topside_text {
+  display: flex;
+  justify-content: space-between;
+}
+.page .page_content .topside_text p {
+  margin: 0 16px;
+  color: palevioletred;
+  font-weight: bold;
+}
+.page .page_content .page_container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1050px;
+}/*# sourceMappingURL=AnimalPage.css.map */
