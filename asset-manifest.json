@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pigLing-shop/static/css/main.41c2aa4a.css",
+    "main.css": "/pigLing-shop/static/css/main.3912288e.css",
     "main.js": "/pigLing-shop/static/js/main.5d643d98.js",
     "static/media/View-2.png": "/pigLing-shop/static/media/View-2.b77c9fa2bc8e027b46bb.png",
     "static/media/background_001.png": "/pigLing-shop/static/media/background_001.cfe77d932b51612ccd46.png",
@@ -16,11 +16,11 @@
     "static/media/HotelLogo_transparent.png": "/pigLing-shop/static/media/HotelLogo_transparent.dc47b79d8ebbd698440a.png",
     "static/media/control_yorself.jpg": "/pigLing-shop/static/media/control_yorself.eb2878859f92432a553e.jpg",
     "index.html": "/pigLing-shop/index.html",
-    "main.41c2aa4a.css.map": "/pigLing-shop/static/css/main.41c2aa4a.css.map",
+    "main.3912288e.css.map": "/pigLing-shop/static/css/main.3912288e.css.map",
     "main.5d643d98.js.map": "/pigLing-shop/static/js/main.5d643d98.js.map"
   },
   "entrypoints": [
-    "static/css/main.41c2aa4a.css",
+    "static/css/main.3912288e.css",
     "static/js/main.5d643d98.js"
   ]
 }
