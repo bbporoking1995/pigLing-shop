@@ -82,4 +82,16 @@
 }
 
 
+@media (width < 900px) {
+  .product_container {
+    width: 45vw;
+    margin: 5px;
 
+  }
+}
+
+@media (width < 400px) {
+  .product_container {
+    margin: 5px 4px;
+  }
+}

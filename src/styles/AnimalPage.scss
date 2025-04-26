@@ -1,6 +1,6 @@
 .page {
     margin: 30px 300px;
-    
+    min-height: 71vh;
     .page_content {
         display: flex;
         .topside_text {
@@ -23,15 +23,17 @@
         }
     }
 }
-// @media (width >= 1865px) {
-//     .page {
-//         .page_content{
-//             .topside_text{
-//                 p:nth-child(2) {
-//                     margin-right: 70px;
-//                 }
-//             }
-//         }
-//     }
-    
-// }
+
+
+@media (width < 1200px) {
+    .page {
+        margin: 10px;
+        .page_content{
+            display: flex;
+            flex-wrap: wrap;
+            .page_container{
+                width: 100%;
+            }
+        }
+    }
+}

@@ -2,3 +2,8 @@
     background: url("../pic/background_005.png");
     height: 71vh;
 }
+@media (width < 1400px) {
+    .page404 {
+        background: top 20% right 50.5% url("../pic/background_005.png");
+    }
+}

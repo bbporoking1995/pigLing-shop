@@ -1,4 +1,4 @@
-export { default as AAA } from "./AAA.jpg";
+// export { default as AAA } from "./AAA.jpg";
 export { default as hotelLogo } from "./HotelLogo_transparent.png";
 export { default as pic1 } from "./Room-3-p3.png";
 export { default as pic2 } from "./Room-4-p1.png";

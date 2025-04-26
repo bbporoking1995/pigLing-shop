@@ -111,10 +111,6 @@ const Sidebar = ({ onFilter }) => {
                   "skirt03",
                   "skirt04",
                   "skirt05",
-                  "tshirt01",
-                  "tshirt02",
-                  "tshirt03",
-                  "tshirt04",
                 ],
               },
               {
