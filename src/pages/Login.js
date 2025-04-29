@@ -64,7 +64,6 @@ const Login = () => {
           </button>
         </div>
       </div>
-      {/* <ToastContainer position="top-center" autoClose={2000} /> */}
     </div>
   );
 };

@@ -20,7 +20,7 @@
         
         h2 {
             text-align: center;
-            color: rgb(255, 255, 255);
+            color: #ffffff;
             text-shadow: -2px 0px 1px #000000, 0px 2px 1px #000000, 2px 0px 1px #000000, 0px -2px 1px #000000;
             font-size: 28px;
             margin-bottom: 20px;
@@ -102,4 +102,29 @@
             }
           }
     }
+}
+
+@media (width < 1600px) {
+  .login_container{
+    background: url("../pic/background_003.png") right 80% top 30% / cover no-repeat;
+    .login_content {
+      width: 400px;
+      top: 15%;
+      left: 15%;
+    }
+  }
+}
+
+@media (width < 1200px) {
+  .login_container{
+    background: url("../pic/background_003.png") right 80% top 30% / cover no-repeat;
+    .login_content {
+      width: 300px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
 }
