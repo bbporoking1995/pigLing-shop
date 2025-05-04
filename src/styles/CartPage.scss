@@ -61,9 +61,20 @@
 }
 
 .empty_cart {
-  background: url("../pic/background_006.png");
+  position: relative;
+  background: right 65% top 12% url("../pic/background_006.png");
   height: 71vh;
+  .blink_text {
+    position: absolute;
+    right: 59%;
+    top: 10%;
+    color: #ffe054;
+    text-shadow: -3px -1px 1px black, 3px -1px 1px black, 0px -3px 1px black, 0px 3px 1px black;
+    font-size: 5rem;
+    animation: blink 2s infinite;
+  }
 }
+
 .normal_cart {
   min-height: 68vh;
   margin: 30px 300px;
@@ -82,8 +93,9 @@
     .cart_table {
       margin: auto;
       border-collapse: collapse;
-      background: white;
+      background: #ffffffb3;
       width: 800px;
+      border-radius: 6px;
       thead {
         // border-bottom: 1px solid #c2c2c2;
         position: relative;
@@ -166,6 +178,7 @@
       justify-content: center;
       padding: 30px;
       width: 500px;
+      border-radius: 6px;
       justify-content: space-between;
       background:#f3f3f3a9 ;
       
@@ -259,6 +272,11 @@
   }
 }
 
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 @media(width < 1900px) {
   .normal_cart{
     
@@ -272,15 +290,19 @@
 }
 @media(width < 1600px) {
   .unlogin_cart {
-    background:top 15% right 52% url("../pic/background_004.png");
+    background: right 52% top 15% url("../pic/background_004.png");
   }
-  
+  // .empty_cart {
+  //   background: right 55% top 12% url("../pic/background_006.png");
+  // }
 
 }
 
 
 @media(width < 900px) {
-
+  .empty_cart {
+    background: right 45% top 12% url("../pic/background_006.png");
+  }
   .normal_cart{
     margin: 30px 0;
     .cart_content {
@@ -321,3 +343,8 @@
   }
 }
 
+@media(width < 576px) {
+  .empty_cart {
+    background: right 60% top 12% url("../pic/background_006.png");
+  }
+}

@@ -16,7 +16,22 @@
   color: palevioletred;
 }
 .homepage_container .hot_item {
+  margin-bottom: 30px;
+}
+.homepage_container .hot_item h3 {
   color: white;
   font-size: 30px;
   text-shadow: -2px 0px 1px #e16b8c, 0px 2px 1px #e16b8c, 2px 0px 1px #e16b8c, 0px -2px 1px #e16b8c;
+}
+.homepage_container .hot_item .you_may_like_item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (width < 1600px) {
+  .homepage_container {
+    margin: 0;
+  }
 }/*# sourceMappingURL=HomePage.css.map */

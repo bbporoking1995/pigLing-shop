@@ -54,7 +54,9 @@ const CartPage = ({ min = 1 }) => {
   return (
     <div>
       {cart.length === 0 ? (
-        <div className="empty_cart"></div>
+        <div className="empty_cart">
+          <p className="blink_text">空的</p>
+        </div>
       ) : (
         <div className="normal_cart">
           <h3>購物車 Cart</h3>

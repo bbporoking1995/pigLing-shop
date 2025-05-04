@@ -8,14 +8,16 @@ a {
     text-decoration: none;
 }
 body {
-    background-color: #FEDFE1;
+    // background-color: #FEDFE1;
+    background: linear-gradient(120deg,#f8f8d5 ,#FEDFE1,#bcf2ff);
 }
 .topside{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 300px;
-    background: linear-gradient(25deg, #ffa6bb,transparent, #fae897);
+    // background: linear-gradient(25deg, #ffa6bb,transparent, #fae897);
+    background: #ffffffa4;
     backdrop-filter: blur(10px); 
     box-shadow: 0 2px 5px #0000005d;
     position: sticky;
@@ -87,7 +89,7 @@ body {
         font-size: 18px;
     }
 }
-@media (width < 900px) {
+@media (width < 1200px) {
     .topside {
         padding: 0;
     }

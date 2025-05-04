@@ -1,7 +1,7 @@
-.swiper {
-  margin: 0;            /* 移除自動置中 */
-  width: 800px;
-}
+// .swiper {
+//   margin: 0;            /* 移除自動置中 */
+//   width: 800px;
+// }
 .swiper-pagination-bullet-active{
     background-color: pink;
 }
@@ -36,11 +36,3 @@
 .custom-swiper-button-next {
   right: 10px;
 }
-// @keyframes flicker {
-//   0%, 100% { opacity: 1; }
-//   50% { opacity: 0.6; }
-// }
-
-// .animated-arrow {
-//   animation: flicker 1.5s infinite;
-// }

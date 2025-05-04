@@ -1,9 +1,3 @@
-@charset "UTF-8";
-.swiper {
-  margin: 0; /* 移除自動置中 */
-  width: 800px;
-}
-
 .swiper-pagination-bullet-active {
   background-color: pink;
 }

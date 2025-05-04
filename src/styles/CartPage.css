@@ -59,8 +59,18 @@
 }
 
 .empty_cart {
-  background: url("../pic/background_006.png");
+  position: relative;
+  background: right 65% top 12% url("../pic/background_006.png");
   height: 71vh;
+}
+.empty_cart .blink_text {
+  position: absolute;
+  right: 59%;
+  top: 10%;
+  color: #ffe054;
+  text-shadow: -3px -1px 1px black, 3px -1px 1px black, 0px -3px 1px black, 0px 3px 1px black;
+  font-size: 5rem;
+  animation: blink 2s infinite;
 }
 
 .normal_cart {
@@ -82,8 +92,9 @@
 .normal_cart .cart_content .cart_table {
   margin: auto;
   border-collapse: collapse;
-  background: white;
+  background: rgba(255, 255, 255, 0.7019607843);
   width: 800px;
+  border-radius: 6px;
 }
 .normal_cart .cart_content .cart_table thead {
   position: relative;
@@ -158,6 +169,7 @@
   justify-content: center;
   padding: 30px;
   width: 500px;
+  border-radius: 6px;
   justify-content: space-between;
   background: rgba(243, 243, 243, 0.662745098);
 }
@@ -236,6 +248,14 @@
   color: #16a34a;
 }
 
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
 @media (width < 1900px) {
   .normal_cart .cart_content .cart_table {
     margin-bottom: 15px;
@@ -243,10 +263,13 @@
 }
 @media (width < 1600px) {
   .unlogin_cart {
-    background: top 15% right 52% url("../pic/background_004.png");
+    background: right 52% top 15% url("../pic/background_004.png");
   }
 }
 @media (width < 900px) {
+  .empty_cart {
+    background: right 45% top 12% url("../pic/background_006.png");
+  }
   .normal_cart {
     margin: 30px 0;
   }
@@ -283,5 +306,10 @@
   }
   .normal_cart .cart_content .normal_cart_right_side .cart_note {
     margin: 1rem 0;
+  }
+}
+@media (width < 576px) {
+  .empty_cart {
+    background: right 60% top 12% url("../pic/background_006.png");
   }
 }/*# sourceMappingURL=CartPage.css.map */
