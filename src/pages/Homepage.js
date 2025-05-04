@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper/modules";
+import { Autoplay, FreeMode } from "swiper/modules";
 import ItemLogo from "../components/ItemLogo";
 import Carousel from "../components/Carousel";
 import * as pic from "../pic";
@@ -462,9 +462,13 @@ const productData = [
 ];
 
 const category = [
-  { path: "/item/animal", pic: pic.controlYorself, text: "管好你自己" },
-  { path: "/item/animal", pic: pic.goldenApple, text: "金蘋果" },
-  { path: "/item/animal", pic: pic.pic_1, text: "圖1" },
+  { src: pic.animal8, text: "溫和動物" },
+  { src: pic.animal18, text: "凶猛動物" },
+  { src: pic.tshirt1, text: "上半身" },
+  { src: pic.pant1, text: "下半身" },
+  { src: pic.game7, text: "遊戲" },
+  { src: pic.accessory10, text: "飾品" },
+  { src: pic.goldenApple, text: "金蘋果" },
 ];
 
 const Homepage = () => {
@@ -479,19 +483,33 @@ const Homepage = () => {
         <div className="slide">
           <Carousel />
         </div>
-        <p>產品分類</p>
+        <h3 className="product_type_title">產品分類</h3>
         <div className="sell_item">
           <Swiper
-            modules={[Autoplay, Navigation]}
-            spaceBetween={10}
-            slidesPerView={3}
-            autoplay={{ delay: 3000 }}
-            navigation
+            modules={[Autoplay, FreeMode]}
+            loop
+            spaceBetween={5}
+            freeMode={{
+              enabled: true,
+              momemtum: false,
+            }}
+            speed={1000}
+            autoplay={{
+              delay: 0,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
+            breakpoints={{
+              0: { slidesPerView: 2.2 },
+              480: { slidesPerView: 2.8 },
+              640: { slidesPerView: 3.2 },
+              1024: { slidesPerView: 5 },
+            }}
           >
             {category.map((i, index) => (
               <SwiperSlide key={index}>
-                <Link to={i.path}>
-                  <ItemLogo src={i.pic} text={i.text} />
+                <Link to="/item">
+                  <ItemLogo src={i.src} text={i.text} />
                 </Link>
               </SwiperSlide>
             ))}

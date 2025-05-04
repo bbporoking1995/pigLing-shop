@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Product from "../components/Product";
 import Sidebar from "../components/Sidebar";
 import * as pic from "../pic";
-import "../styles/AnimalPage.css";
+import "../styles/ItemPage.css";
 
-const AnimalPage = () => {
+const ItemPage = () => {
   const [filteredIds, setFilteredIds] = useState(null);
   const productData = [
     {
@@ -517,7 +517,6 @@ const AnimalPage = () => {
           <div className="topside_text">
             <ProductTitle />
             <p>{filteredData.length}件商品</p>
-            {/* <button onClick={() => handleFilter("animal01")}>你的噩夢</button> */}
           </div>
           <div className="page_container">
             {filteredData.map((i) => (
@@ -530,4 +529,4 @@ const AnimalPage = () => {
   );
 };
 
-export default AnimalPage;
+export default ItemPage;

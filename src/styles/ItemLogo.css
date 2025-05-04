@@ -8,11 +8,11 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border-radius: 50%;
   width: 100px;
   height: 100px;
   overflow: hidden;
   margin-bottom: 10px;
+  padding: 10px;
 }
 .pic_logo .item_pic img {
   -o-object-fit: cover;

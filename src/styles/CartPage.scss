@@ -234,27 +234,27 @@
           opacity: 0.6;
         }
       }
-      
-      .goto_portfolio {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        // background-color: white;
-        border-radius: 5px;
+      .link {
         margin: auto;
-        padding: 5px 7px;
-        cursor: pointer;
-        transition: all ease-in 0.3s;
-        border: 2px solid#91989F;
-        color: #91989F;
-        gap: 5px;
-        font-size: 16px;
-        &:hover {
-          background-color: #91989F;
-          color: white;
+        .goto_portfolio {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 5px;
+          margin: auto;
+          padding: 5px 7px;
+          cursor: pointer;
+          transition: all ease-in 0.3s;
+          border: 2px solid#91989F;
+          color: #91989F;
+          gap: 5px;
+          font-size: 16px;
+          &:hover {
+            background-color: #91989F;
+            color: white;
+          }
         }
       }
-
       
     }
   }

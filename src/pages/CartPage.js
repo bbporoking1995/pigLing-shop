@@ -32,7 +32,14 @@ function Copyable({ children, value = children }) {
 const CartPage = ({ min = 1 }) => {
   const { cart, updateQuantity, removeFromCart, clearCart } =
     useContext(CartContext);
+
   const { isLoggedIn } = useContext(AuthContext);
+
+  const ExternaLink = ({ href, children, ...rest }) => (
+    <a href={href} target="_blank" rel="noopener noreferrer" {...rest}>
+      {children}
+    </a>
+  );
 
   if (!isLoggedIn) {
     return (
@@ -139,9 +146,14 @@ const CartPage = ({ min = 1 }) => {
                   <br />
                   看更多作者介紹與作品可以到個人簡歷觀看唷！
                 </p>
-                <button className="goto_portfolio">
-                  <UserRoundSearch /> 前往簡歷
-                </button>
+                <ExternaLink
+                  className="link"
+                  href="https://bbporoking1995.github.io/portfolio/index.html#"
+                >
+                  <button className="goto_portfolio">
+                    <UserRoundSearch /> 前往簡歷
+                  </button>
+                </ExternaLink>
               </div>
             </div>
           </div>

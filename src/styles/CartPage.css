@@ -217,7 +217,10 @@
   left: -100px;
   opacity: 0.6;
 }
-.normal_cart .cart_content .normal_cart_right_side .goto_portfolio {
+.normal_cart .cart_content .normal_cart_right_side .link {
+  margin: auto;
+}
+.normal_cart .cart_content .normal_cart_right_side .link .goto_portfolio {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -231,7 +234,7 @@
   gap: 5px;
   font-size: 16px;
 }
-.normal_cart .cart_content .normal_cart_right_side .goto_portfolio:hover {
+.normal_cart .cart_content .normal_cart_right_side .link .goto_portfolio:hover {
   background-color: #91989F;
   color: white;
 }

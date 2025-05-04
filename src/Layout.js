@@ -18,7 +18,7 @@ const Layout = () => {
         </div>
         <ul>
           <li>
-            <Link to="item/animal">
+            <Link to="item">
               <Cat />
             </Link>
           </li>
