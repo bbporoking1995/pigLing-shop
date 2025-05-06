@@ -1,13 +1,14 @@
 import React, { useContext } from "react";
 import { CartContext } from "../CartContext";
 import { BaggageClaim } from "lucide-react";
+import "../styles/CartIcon.css";
 
 const CartIcon = () => {
   const { cartCount } = useContext(CartContext);
   return (
     <div className="cart_icon">
       <BaggageClaim />
-      <span>：{cartCount}</span>
+      <span className="cart_count">{cartCount}</span>
     </div>
   );
 };

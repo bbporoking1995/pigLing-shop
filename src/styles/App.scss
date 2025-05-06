@@ -8,7 +8,6 @@ a {
     text-decoration: none;
 }
 body {
-    // background-color: #FEDFE1;
     background: linear-gradient(120deg,#f8f8d5 ,#FEDFE1,#bcf2ff);
 }
 .topside{
@@ -27,7 +26,6 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        // margin:0 100px;
         a {
             width: 150px;
             img {
@@ -36,61 +34,154 @@ body {
             }
         }
     }
-    ul {
+    .hamburger {
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: none;
+      }
+      .nav {
         display: flex;
+        list-style: none;
+        // gap: 20px;
+        transition: max-height 0.4s ease, opacity 0.4s ease;
+        overflow: hidden;
         li {
-            display: flex;
-            align-items: center;
-            list-style-type: none;
-            .unlogin {
-                margin: 1rem;
-                .account_icon{
-                    color: #60373E;
-                    &:hover {
-                        color: darkgoldenrod;
-                    }
-                }
+            margin: 10px 20px;
+            display: inline-block;
+            font-size: 14px;
+            svg {
+                margin-bottom: 3px;
             }
-            a {
-                text-decoration: none;
-                color: #B5495B;
-                &:hover {
-                    color: darkgoldenrod;
+        }
+      }
+      .nav.open {
+        display: flex;
+      }
+}
+
+.logged_in {
+    margin-right: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    .login_icon {   
+        color: gray;
+        margin-right: 15px;
+    }
+    
+    span {
+        display: flex;
+        font-family: "Press Start 2P", monospace;
+        color: gray;
+        font-size: 18px;
+    }
+
+    button {
+        all: unset;
+        cursor: pointer;
+        .logout_icon {
+            transition: all 0.5s ease;
+            &:hover {
+                color: palevioletred;
+            }
+        }
+    }
+}
+
+@media (width > 900px) {
+    .topside {
+        .nav {
+            display: flex;
+            position: static;
+            align-items: center;
+            li {
+                display: flex;
+                align-items: center;
+                list-style-type: none;
+                a {
+                    display: inline-flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-decoration: none;
+                    color: gray;
+                    transition: all 0.5s ease;
+                    &:hover {
+                        color: palevioletred;
+                    }
                 }
             }
         }
     }
 }
 
-.cart_icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.logged_in {
-    margin-right: 15px;
-    .login_icon {
-        // color:white;
-        color: #60373E;
-        margin-right: 15px;
+@media (width < 1600px) {
+    .topside {
+        padding: 10px;
     }
-    button {
-        all: unset;
-        cursor: pointer;
-        .logout_icon {
-            &:hover {
-                color: darkgoldenrod;
+}
+
+@media (width < 900px) {
+    .topside {
+        .hamburger {
+            display: block;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 50;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 85px;
+            left: 0;
+            width: 100%;
+            max-height: 0;
+            background-color: white;
+            padding:0 20px;
+            opacity: 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 99;
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 10px;
+                transform: translateY(-10px);
+                opacity: 0;
+                font-size: 16px;
+                transition: transform 0.3s ease, opacity 0.5s ease;
+                a{
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    color: gray;
+                    transition: all 0.5s ease;
+                    &:hover {
+                        color: palevioletred;
+                    }
+                }
+                .account_icon, .store_icon {
+                    margin-right: 20px;
+                }
             }
         }
-    }
-    span {
-        font-family: "Press Start 2P", monospace;
-        color: #60373E;
-        font-size: 18px;
-    }
-}
-@media (width < 1200px) {
-    .topside {
-        padding: 0;
+        .nav.open {
+            max-height: 300px; 
+            opacity: 1;
+            padding: 20px;
+            li {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
     }
 }

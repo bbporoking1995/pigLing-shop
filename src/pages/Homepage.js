@@ -483,7 +483,7 @@ const Homepage = () => {
         <div className="slide">
           <Carousel />
         </div>
-        <h3 className="product_type_title">產品分類</h3>
+        <h3 className="product_type_title">商品分類</h3>
         <div className="sell_item">
           <Swiper
             modules={[Autoplay, FreeMode]}

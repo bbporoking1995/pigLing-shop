@@ -16,6 +16,7 @@
   background: rgba(252, 246, 192, 0.4862745098);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
+  border-radius: 6px;
   top: 20%;
   left: 25%;
   box-shadow: -3px 3px 3px #ff8b5d;
@@ -37,7 +38,7 @@
 .login_container .login_content .account input, .login_container .login_content .password input {
   font-size: 20px;
   border: 0;
-  box-shadow: 3px 3px gray;
+  box-shadow: 3px 3px #919191;
   border-radius: 3px;
   padding: 8px;
   margin: 8px;
@@ -101,6 +102,7 @@
     width: 400px;
     top: 15%;
     left: 15%;
+    box-shadow: -3px 3px 1px #9c9c9c;
   }
 }
 @media (width < 1200px) {

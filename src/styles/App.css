@@ -39,59 +39,143 @@ body {
   width: 100%;
   vertical-align: bottom;
 }
-.topside ul {
+.topside .hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+.topside .nav {
   display: flex;
+  list-style: none;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  overflow: hidden;
 }
-.topside ul li {
+.topside .nav li {
+  margin: 10px 20px;
+  display: inline-block;
+  font-size: 14px;
+}
+.topside .nav li svg {
+  margin-bottom: 3px;
+}
+.topside .nav.open {
   display: flex;
-  align-items: center;
-  list-style-type: none;
-}
-.topside ul li .unlogin {
-  margin: 1rem;
-}
-.topside ul li .unlogin .account_icon {
-  color: #60373E;
-}
-.topside ul li .unlogin .account_icon:hover {
-  color: darkgoldenrod;
-}
-.topside ul li a {
-  text-decoration: none;
-  color: #B5495B;
-}
-.topside ul li a:hover {
-  color: darkgoldenrod;
-}
-
-.cart_icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .logged_in {
   margin-right: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .logged_in .login_icon {
-  color: #60373E;
+  color: gray;
   margin-right: 15px;
+}
+.logged_in span {
+  display: flex;
+  font-family: "Press Start 2P", monospace;
+  color: gray;
+  font-size: 18px;
 }
 .logged_in button {
   all: unset;
   cursor: pointer;
 }
-.logged_in button .logout_icon:hover {
-  color: darkgoldenrod;
+.logged_in button .logout_icon {
+  transition: all 0.5s ease;
 }
-.logged_in span {
-  font-family: "Press Start 2P", monospace;
-  color: #60373E;
-  font-size: 18px;
+.logged_in button .logout_icon:hover {
+  color: palevioletred;
 }
 
-@media (width < 1200px) {
+@media (width > 900px) {
+  .topside .nav {
+    display: flex;
+    position: static;
+    align-items: center;
+  }
+  .topside .nav li {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+  .topside .nav li a {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: gray;
+    transition: all 0.5s ease;
+  }
+  .topside .nav li a:hover {
+    color: palevioletred;
+  }
+}
+@media (width < 1600px) {
   .topside {
-    padding: 0;
+    padding: 10px;
+  }
+}
+@media (width < 900px) {
+  .topside .hamburger {
+    display: block;
+  }
+  .topside .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 50;
+  }
+  .topside .nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    background-color: white;
+    padding: 0 20px;
+    opacity: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+  }
+  .topside .nav li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    transform: translateY(-10px);
+    opacity: 0;
+    font-size: 16px;
+    transition: transform 0.3s ease, opacity 0.5s ease;
+  }
+  .topside .nav li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: gray;
+    transition: all 0.5s ease;
+  }
+  .topside .nav li a:hover {
+    color: palevioletred;
+  }
+  .topside .nav li .account_icon, .topside .nav li .store_icon {
+    margin-right: 20px;
+  }
+  .topside .nav.open {
+    max-height: 300px;
+    opacity: 1;
+    padding: 20px;
+  }
+  .topside .nav.open li {
+    transform: translateY(0);
+    opacity: 1;
   }
 }/*# sourceMappingURL=App.css.map */

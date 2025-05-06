@@ -1,0 +1,23 @@
+.cart_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.cart_icon .cart_count {
+  position: absolute;
+  background: rgba(255, 130, 130, 0.9921568627);
+  box-shadow: 1px 2px thistle;
+  border-radius: 50%;
+  padding: 1px 6px;
+  color: white;
+  font-weight: bold;
+  top: -10px;
+  left: 15px;
+}
+
+@media (width < 900px) {
+  .cart_icon {
+    margin-right: 30px;
+  }
+}/*# sourceMappingURL=CartIcon.css.map */
