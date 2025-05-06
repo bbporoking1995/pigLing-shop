@@ -3,25 +3,24 @@ import { Plus } from "lucide-react";
 import useCartActions from "../useCartActions";
 import "../styles/LikeItem.css";
 
-const LikeItem = ({ src, title, itemId, text, price, min = 1, max }) => {
-  const [count, setCount] = useState(min);
+const LikeItem = ({ src, title, itemId, text, price, max }) => {
+  const [count, setCount] = useState(1);
+  const { addWithCheck } = useCartActions();
 
   const handleClick = () => {
+    addWithCheck({
+      src,
+      itemId,
+      title,
+      price,
+      quantity: 1,
+      max,
+    });
     if (count <= max) {
-      const nextCount = count + 1;
-      setCount(nextCount);
-      addWithCheck({
-        src,
-        itemId,
-        title,
-        price,
-        quantity: count,
-        max,
-      });
+      setCount((prev) => prev + 1);
     }
   };
 
-  const { addWithCheck } = useCartActions();
   return (
     <div className="like_item">
       <img src={src} alt={title} />
