@@ -5,10 +5,11 @@ import "../styles/CartIcon.css";
 
 const CartIcon = () => {
   const { cartCount } = useContext(CartContext);
+
   return (
     <div className="cart_icon">
       <BaggageClaim />
-      <span className="cart_count">{cartCount}</span>
+      <span className="cart_count">{cartCount >= 100 ? `99+` : cartCount}</span>
     </div>
   );
 };
