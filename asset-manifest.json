@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pigLing-shop/static/css/main.cb38da70.css",
-    "main.js": "/pigLing-shop/static/js/main.dfc85cdd.js",
+    "main.css": "/pigLing-shop/static/css/main.f946fb17.css",
+    "main.js": "/pigLing-shop/static/js/main.cf861f98.js",
     "static/media/View-2.png": "/pigLing-shop/static/media/View-2.b77c9fa2bc8e027b46bb.png",
     "static/media/background_001.png": "/pigLing-shop/static/media/background_001.cfe77d932b51612ccd46.png",
     "static/media/Room-4-p1.png": "/pigLing-shop/static/media/Room-4-p1.7df4697d1b7a37ec3cfc.png",
@@ -14,11 +14,11 @@
     "static/media/pigLing_Logo_transparent.png": "/pigLing-shop/static/media/pigLing_Logo_transparent.d57abcd8e88e0fad290f.png",
     "static/media/HotelLogo_transparent.png": "/pigLing-shop/static/media/HotelLogo_transparent.dc47b79d8ebbd698440a.png",
     "index.html": "/pigLing-shop/index.html",
-    "main.cb38da70.css.map": "/pigLing-shop/static/css/main.cb38da70.css.map",
-    "main.dfc85cdd.js.map": "/pigLing-shop/static/js/main.dfc85cdd.js.map"
+    "main.f946fb17.css.map": "/pigLing-shop/static/css/main.f946fb17.css.map",
+    "main.cf861f98.js.map": "/pigLing-shop/static/js/main.cf861f98.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb38da70.css",
-    "static/js/main.dfc85cdd.js"
+    "static/css/main.f946fb17.css",
+    "static/js/main.cf861f98.js"
   ]
 }
