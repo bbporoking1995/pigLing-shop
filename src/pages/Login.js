@@ -28,7 +28,6 @@ const Login = () => {
     };
     login(user);
     navigate("/cart");
-    console.log(user);
   };
 
   return (

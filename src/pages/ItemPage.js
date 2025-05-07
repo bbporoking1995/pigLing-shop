@@ -6,6 +6,7 @@ import "../styles/ItemPage.css";
 
 const ItemPage = () => {
   const [filteredIds, setFilteredIds] = useState(null);
+
   const productData = [
     {
       src: pic.animal1,
@@ -15,6 +16,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 99999,
+      category: ["animalBad"],
     },
     {
       src: pic.animal2,
@@ -24,6 +26,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 5,
+      category: ["animalBad"],
     },
     {
       src: pic.animal3,
@@ -33,6 +36,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 6666,
+      category: ["animalBad"],
     },
     {
       src: pic.animal4,
@@ -42,6 +46,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 1111,
+      category: ["animalGood"],
     },
     {
       src: pic.animal5,
@@ -51,6 +56,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 500,
+      category: ["animalGood"],
     },
     {
       src: pic.animal6,
@@ -60,6 +66,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 2999,
+      category: ["animalGood"],
     },
     {
       src: pic.animal7,
@@ -69,6 +76,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 9999999,
+      category: ["animalGood"],
     },
     {
       src: pic.animal8,
@@ -78,6 +86,7 @@ const ItemPage = () => {
       min: 1,
       max: 1,
       price: 5200,
+      category: ["animalGood"],
     },
     {
       src: pic.animal10,
@@ -87,6 +96,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 7777,
+      category: ["animalGood"],
     },
     {
       src: pic.animal11,
@@ -96,6 +106,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 1000,
+      category: ["animalBad"],
     },
     {
       src: pic.animal12,
@@ -105,6 +116,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 64,
+      category: ["animalGood"],
     },
     {
       src: pic.animal13,
@@ -114,6 +126,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 819,
+      category: ["animalGood"],
     },
     {
       src: pic.animal14,
@@ -123,6 +136,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 5100,
+      category: ["animalGood"],
     },
     {
       src: pic.animal15,
@@ -132,6 +146,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 150000000,
+      category: ["animalGood"],
     },
     {
       src: pic.animal16,
@@ -141,6 +156,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 1998,
+      category: ["animalGood"],
     },
     {
       src: pic.animal17,
@@ -150,6 +166,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 225,
+      category: ["animalGood"],
     },
     {
       src: pic.animal18,
@@ -159,6 +176,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 79,
+      category: ["animalBad"],
     },
     {
       src: pic.clothes1,
@@ -168,6 +186,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 300000,
+      category: ["clothes"],
     },
     {
       src: pic.clothes2,
@@ -177,6 +196,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 74146,
+      category: ["clothes"],
     },
     {
       src: pic.pant1,
@@ -186,6 +206,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 9990,
+      category: ["pant"],
     },
     {
       src: pic.pant2,
@@ -195,6 +216,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 15000,
+      category: ["pant"],
     },
     {
       src: pic.pant3,
@@ -204,6 +226,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 150,
+      category: ["pant"],
     },
     {
       src: pic.skirt1,
@@ -213,6 +236,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 3000,
+      category: ["skirt"],
     },
     {
       src: pic.skirt2,
@@ -222,6 +246,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 1500,
+      category: ["skirt"],
     },
     {
       src: pic.skirt3,
@@ -231,6 +256,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 2990,
+      category: ["skirt"],
     },
     {
       src: pic.skirt4,
@@ -240,6 +266,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 5000,
+      category: ["skirt"],
     },
     {
       src: pic.skirt5,
@@ -249,6 +276,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 600,
+      category: ["skirt"],
     },
     {
       src: pic.tshirt1,
@@ -258,6 +286,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 1,
+      category: ["tshirt"],
     },
     {
       src: pic.tshirt2,
@@ -267,6 +296,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 999,
+      category: ["tshirt"],
     },
     {
       src: pic.tshirt3,
@@ -276,6 +306,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 50,
+      category: ["tshirt"],
     },
     {
       src: pic.tshirt4,
@@ -285,6 +316,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 550,
+      category: ["tshirt"],
     },
     {
       src: pic.game1,
@@ -294,6 +326,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 2000,
+      category: ["gameHard"],
     },
     {
       src: pic.game2,
@@ -303,6 +336,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 555555,
+      category: ["gameHard"],
     },
     {
       src: pic.game3,
@@ -312,6 +346,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 77748,
+      category: ["gameHard"],
     },
     {
       src: pic.game4,
@@ -321,6 +356,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 10,
+      category: ["gameHard"],
     },
     {
       src: pic.game5,
@@ -330,6 +366,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 25,
+      category: ["gameHard"],
     },
     {
       src: pic.game6,
@@ -339,6 +376,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 199,
+      category: ["game"],
     },
     {
       src: pic.game7,
@@ -348,6 +386,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 3000,
+      category: ["game"],
     },
     {
       src: pic.game8,
@@ -357,6 +396,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 15580,
+      category: ["gameHard"],
     },
     {
       src: pic.game9,
@@ -366,6 +406,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 600,
+      category: ["game"],
     },
     {
       src: pic.accessory1,
@@ -375,6 +416,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 690,
+      category: ["accessory"],
     },
     {
       src: pic.accessory2,
@@ -384,6 +426,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 1200,
+      category: ["accessory"],
     },
     {
       src: pic.accessory3,
@@ -393,6 +436,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 2000000,
+      category: ["accessory"],
     },
     {
       src: pic.accessory4,
@@ -402,6 +446,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 3150,
+      category: ["accessory"],
     },
     {
       src: pic.accessory5,
@@ -411,6 +456,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 300,
+      category: ["accessory"],
     },
     {
       src: pic.accessory6,
@@ -420,6 +466,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 890,
+      category: ["accessory"],
     },
     {
       src: pic.accessory7,
@@ -429,6 +476,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 5990,
+      category: ["accessory"],
     },
     {
       src: pic.accessory8,
@@ -438,6 +486,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 390,
+      category: ["accessory"],
     },
     {
       src: pic.accessory9,
@@ -447,6 +496,7 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 1500000,
+      category: ["accessory"],
     },
     {
       src: pic.accessory10,
@@ -456,56 +506,19 @@ const ItemPage = () => {
       min: 1,
       max: 10,
       price: 10000,
+      category: ["accessory"],
     },
   ];
 
   const handleFilter = (ids) => {
-    if (!ids || ids.length === 0) {
-      setFilteredIds(null);
-    } else {
-      setFilteredIds(ids);
-      console.log(ids);
-    }
+    setFilteredIds(ids?.length ? ids : null);
   };
 
   const filteredData = filteredIds
-    ? productData.filter((item) => filteredIds.includes(item.itemId))
+    ? productData.filter((item) =>
+        item.category.some((p) => filteredIds.includes(p))
+      )
     : productData;
-
-  const getCategory = (id) => id.match(/^[a-zA-Z]+/)[0];
-
-  const ProductTitle = () => {
-    const categories = new Set(filteredData.map((p) => getCategory(p.itemId)));
-
-    let title = "所有商品";
-
-    if (categories.size === 1) {
-      const one = [...categories][0];
-      console.log(one);
-
-      switch (one) {
-        case "animal":
-          title = "動物";
-          break;
-        case "game":
-          title = "遊戲";
-          break;
-
-        case "clothes":
-        case "pant":
-        case "accessory":
-          title = "衣飾";
-          break;
-
-        default:
-          break;
-      }
-    } else if (categories.size <= 4) {
-      title = "衣飾";
-    }
-
-    return <p>{title}</p>;
-  };
 
   return (
     <div className="page">
@@ -515,7 +528,6 @@ const ItemPage = () => {
         </div>
         <div>
           <div className="topside_text">
-            <ProductTitle />
             <p>{filteredData.length}件商品</p>
           </div>
           <div className="page_container">

@@ -166,7 +166,7 @@ body {
   .topside .nav li a:hover {
     color: palevioletred;
   }
-  .topside .nav li .account_icon, .topside .nav li .store_icon {
+  .topside .nav li .home_icon, .topside .nav li .star_icon, .topside .nav li .account_icon, .topside .nav li .store_icon {
     margin-right: 20px;
   }
   .topside .nav.open {
