@@ -4,12 +4,26 @@ import Footer from "./components/Footer";
 import * as pic from "./pic";
 import CartIcon from "./components/CartIcon";
 import { AuthContext } from "./AuthContext";
-import { LogOut, UserRoundCheck, User, PiggyBank, Menu, X } from "lucide-react";
+import {
+  LogOut,
+  UserRoundCheck,
+  User,
+  PiggyBank,
+  Menu,
+  X,
+  Star,
+  House,
+} from "lucide-react";
 
 const Layout = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const { user, logout, isLoggedIn } = useContext(AuthContext);
+  const ExternaLink = ({ href, children, ...rest }) => (
+    <a href={href} target="_blank" rel="noopener noreferrer" {...rest}>
+      {children}
+    </a>
+  );
 
   return (
     <div>
@@ -47,6 +61,21 @@ const Layout = () => {
                 </Link>
               </div>
             )}
+          </li>
+          <li>
+            <Link to="/" onClick={() => setMenuOpen(false)}>
+              <House className="home_icon" />
+              <p>首頁</p>
+            </Link>
+          </li>
+          <li>
+            <ExternaLink
+              className="link"
+              href="https://bbporoking1995.github.io/portfolio/index.html#"
+            >
+              <Star className="star_icon" />
+              <p>關於作者</p>
+            </ExternaLink>
           </li>
           <li>
             <Link to="item" onClick={() => setMenuOpen(false)}>
