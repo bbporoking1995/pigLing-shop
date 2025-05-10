@@ -52,7 +52,7 @@ body {
   overflow: hidden;
 }
 .topside .nav li {
-  margin: 10px 20px;
+  margin: 18px;
   display: inline-block;
   font-size: 14px;
 }
@@ -88,6 +88,22 @@ body {
 }
 .logged_in button .logout_icon:hover {
   color: palevioletred;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: pink;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: palevioletred;
 }
 
 @media (width > 900px) {

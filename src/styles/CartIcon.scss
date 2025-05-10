@@ -3,22 +3,20 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    
     .cart_count{
         position: absolute;
         background: #ff8282fd;
         box-shadow: 1px 2px thistle;
         border-radius: 50%;
-        min-width: 24px;
-        height: 24px;
-        padding: 5px;
+        width: 25px;
+        height: 25px;
         display: flex;
         align-items: center;
         justify-content: center;
         color: white;
-        // font-weight: bold;
-        top: -10px;
+        top: -16px;
         left: 15px;
+        font-size: 12px;
     }
 }
 

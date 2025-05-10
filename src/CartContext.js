@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState } from "react";
+import React, { createContext, useEffect, useState, useCallback } from "react";
 
 export const CartContext = createContext();
 
@@ -48,9 +48,10 @@ export const CartProvider = ({ children }) => {
   };
 
   //清空購物車
-  const clearCart = () => {
+  const clearCart = useCallback(() => {
     setCart([]);
-  };
+    localStorage.removeItem("cart");
+  }, []);
 
   return (
     <CartContext.Provider

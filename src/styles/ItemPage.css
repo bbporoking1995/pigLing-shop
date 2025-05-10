@@ -32,4 +32,9 @@
     justify-content: center;
     width: 100%;
   }
+}
+@media (width < 365px) {
+  .page {
+    margin: 10px 0;
+  }
 }/*# sourceMappingURL=ItemPage.css.map */

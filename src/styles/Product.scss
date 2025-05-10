@@ -15,6 +15,9 @@
     }
     .content {
         height: 100px;
+        h3 {
+          margin: 10px 0;
+        }
         p {
           display: -webkit-box;
           -webkit-line-clamp: 2;         /* 顯示幾行 */
@@ -26,9 +29,7 @@
           margin: auto;
         }
     }
-    h3 {
-      margin: 10px 0;
-    }
+    
     .price {
       color: hotpink;
       font-family: "Press Start 2P", monospace;
@@ -59,7 +60,7 @@
         padding: 12px;
       }
     }
-    .cart {
+    .cart_btn {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -86,12 +87,30 @@
   .product_container {
     width: 45vw;
     margin: 5px;
-
   }
 }
 
 @media (width < 400px) {
   .product_container {
     margin: 5px 4px;
+    
+    .content {
+      h3 {
+        font-size: 14px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .bottom {
+      .price {
+        font-size: 12px;
+      }
+    }
+
+    .cart_btn {
+      font-size: 12px;
+    }
   }
 }

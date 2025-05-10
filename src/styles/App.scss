@@ -47,7 +47,7 @@ body {
         transition: max-height 0.4s ease, opacity 0.4s ease;
         overflow: hidden;
         li {
-            margin: 10px 20px;
+            margin: 18px;
             display: inline-block;
             font-size: 14px;
             svg {
@@ -87,6 +87,27 @@ body {
             }
         }
     }
+}
+
+// 整體 scrollbar 寬度 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+// 滾動條軌道（背景）
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+// 滾動條滑塊（可拖動部分）
+::-webkit-scrollbar-thumb {
+  background: pink;
+  border-radius: 5px;
+  
+  // 滾動條滑塊 hover 時的樣式 
+  &:hover {
+    background: palevioletred;
+  }
 }
 
 @media (width > 900px) {

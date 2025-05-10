@@ -37,5 +37,13 @@
 @media (width < 1600px) {
     .homepage_container {
         margin: 0;
+        .product_type_title {
+            margin-left: 20px;
+        }
+        .hot_item {
+            .hot_item_title {
+                margin-left: 20px;
+            }
+        }
     }
 }

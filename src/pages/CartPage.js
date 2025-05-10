@@ -4,6 +4,7 @@ import { CartContext } from "../CartContext";
 import { AuthContext } from "../AuthContext";
 import { Minus, Plus, CircleDollarSign, UserRoundSearch } from "lucide-react";
 import { toast } from "react-toastify";
+import * as pic from "../pic";
 import "../styles/CartPage.css";
 
 function Copyable({ children, value = children }) {
@@ -30,10 +31,14 @@ function Copyable({ children, value = children }) {
 }
 
 const CartPage = ({ min = 1 }) => {
-  const { cart, updateQuantity, removeFromCart, clearCart } =
-    useContext(CartContext);
+  const { cart, updateQuantity, removeFromCart } = useContext(CartContext);
 
   const { isLoggedIn } = useContext(AuthContext);
+
+  const handlePayment = localStorage.setItem(
+    "purchasedItems",
+    JSON.stringify(cart)
+  );
 
   const ExternaLink = ({ href, children, ...rest }) => (
     <a href={href} target="_blank" rel="noopener noreferrer" {...rest}>
@@ -62,7 +67,14 @@ const CartPage = ({ min = 1 }) => {
     <div>
       {cart.length === 0 ? (
         <div className="empty_cart">
-          <p className="blink_text">空的</p>
+          <p className="pig_text">
+            豬布林提醒：
+            <br />
+            購物車是空的唷
+          </p>
+          <div className="pig_contnent">
+            <img src={pic.bg009} alt="pig" />
+          </div>
         </div>
       ) : (
         <div className="normal_cart">
@@ -133,7 +145,7 @@ const CartPage = ({ min = 1 }) => {
                   <strong>總金額：</strong>${totalPrice}
                 </p>
                 <Link to="/finish">
-                  <button className="finish_btn" onClick={clearCart}>
+                  <button className="finish_btn" onClick={handlePayment}>
                     <CircleDollarSign />
                     立即結帳
                   </button>

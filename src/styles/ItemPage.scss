@@ -11,10 +11,6 @@
                 color: palevioletred;
                 font-weight: bold;
             }
-            // p:nth-child(2) {
-            //     margin-right: 70px;
-            //     // color: darkblue;
-            // }
         }
         .page_container {
             display: flex;
@@ -35,5 +31,10 @@
                 width: 100%;
             }
         }
+    }
+}
+@media (width < 365px) {
+    .page {
+        margin: 10px 0;
     }
 }

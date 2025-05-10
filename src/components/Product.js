@@ -37,7 +37,7 @@ const Product = ({ src, itemId, title, text, price, min = 1, max }) => {
           </div>
         </div>
         <button
-          className="cart"
+          className="cart_btn"
           onClick={() =>
             addWithCheck({
               src,

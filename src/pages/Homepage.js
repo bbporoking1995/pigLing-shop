@@ -516,7 +516,7 @@ const Homepage = () => {
           </Swiper>
         </div>
         <div className="hot_item">
-          <h3>你可能會喜歡</h3>
+          <h3 className="hot_item_title">你可能會喜歡</h3>
           <div className="you_may_like_item">
             {recommended.map((i) => (
               <LikeItem key={i.itemId} {...i} />

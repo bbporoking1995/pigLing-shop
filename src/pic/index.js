@@ -10,6 +10,7 @@ export { default as pigLingLogo } from "./pigLing_Logo_transparent.png";
 export { default as bg001 } from "./background_001.png";
 export { default as bg004 } from "./background_004.png";
 export { default as bg005 } from "./background_005.png";
+export { default as bg009 } from "./background_009.png";
 
 //product
 export { default as animal1 } from "./sellItem/animal1.png";

@@ -38,4 +38,10 @@
   .homepage_container {
     margin: 0;
   }
+  .homepage_container .product_type_title {
+    margin-left: 20px;
+  }
+  .homepage_container .hot_item .hot_item_title {
+    margin-left: 20px;
+  }
 }/*# sourceMappingURL=HomePage.css.map */
