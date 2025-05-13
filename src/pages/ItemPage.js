@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useCallback, useState } from "react";
 import Product from "../components/Product";
 import Sidebar from "../components/Sidebar";
 import * as pic from "../pic";
@@ -510,9 +510,9 @@ const ItemPage = () => {
     },
   ];
 
-  const handleFilter = (ids) => {
+  const handleFilter = useCallback((ids) => {
     setFilteredIds(ids?.length ? ids : null);
-  };
+  }, []);
 
   const filteredData = filteredIds
     ? productData.filter((item) =>

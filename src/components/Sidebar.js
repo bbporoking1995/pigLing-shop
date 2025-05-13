@@ -1,8 +1,36 @@
-import React, { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import { Plus, ChevronDown, Squirrel, Shirt, Gamepad2 } from "lucide-react";
 import "../styles/Sidebar.css";
 
 const Sidebar = ({ onFilter }) => {
+  const { search } = useLocation();
+  const hasInit = useRef(false);
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => {
+    if (hasInit.current) return;
+    hasInit.current = true;
+
+    const params = new URLSearchParams(search);
+    const filterKey = params.get("filter");
+
+    if (filterKey) {
+      const map = {
+        animalGood: ["animalGood"],
+        animalBad: ["animalBad"],
+        top: ["clothes", "tshirt"],
+        bottom: ["pant", "skirt"],
+        game: ["game"],
+        accessory: ["accessory"],
+      };
+      const matched = map[filterKey];
+      if (matched && onFilter) {
+        onFilter(matched);
+      }
+    }
+  }, [search, onFilter]);
+
   return (
     <div className="sidebar">
       <h2>商品分類</h2>

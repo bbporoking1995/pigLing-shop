@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
@@ -462,13 +462,37 @@ const productData = [
 ];
 
 const category = [
-  { src: pic.animal8, text: "溫和動物" },
-  { src: pic.animal18, text: "凶猛動物" },
-  { src: pic.tshirt1, text: "上半身" },
-  { src: pic.pant1, text: "下半身" },
-  { src: pic.game7, text: "遊戲" },
-  { src: pic.accessory10, text: "飾品" },
-  { src: pic.goldenApple, text: "金蘋果" },
+  {
+    src: pic.animal8,
+    text: "溫和動物",
+    link: "/item?filter=animalGood",
+  },
+  {
+    src: pic.animal18,
+    text: "凶猛動物",
+    link: "/item?filter=animalBad",
+  },
+  {
+    src: pic.tshirt1,
+    text: "上半身",
+    link: "/item?filter=top",
+  },
+  {
+    src: pic.pant1,
+    text: "下半身",
+    link: "/item?filter=bottom",
+  },
+  { src: pic.game7, text: "遊戲", link: "/item?filter=game" },
+  {
+    src: pic.accessory10,
+    text: "飾品",
+    link: "/item?filter=accessory",
+  },
+  {
+    src: pic.goldenApple,
+    text: "金蘋果",
+    link: "/item",
+  },
 ];
 
 const Homepage = () => {
@@ -508,7 +532,7 @@ const Homepage = () => {
           >
             {category.map((i, index) => (
               <SwiperSlide key={index}>
-                <Link to="/item">
+                <Link to={i.link}>
                   <ItemLogo src={i.src} text={i.text} />
                 </Link>
               </SwiperSlide>
