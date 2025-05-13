@@ -1,15 +1,10 @@
-// export { default as AAA } from "./AAA.jpg";
 export { default as hotelLogo } from "./HotelLogo_transparent.png";
 export { default as pic1 } from "./Room-3-p3.png";
 export { default as pic2 } from "./Room-4-p1.png";
 export { default as pic3 } from "./View-2.png";
 export { default as pic4 } from "./Room-3-p1.png";
-// export { default as controlYorself } from "./control_yorself.jpg";
 export { default as goldenApple } from "./golden_apple_96.png";
 export { default as pigLingLogo } from "./pigLing_Logo_transparent.png";
-export { default as bg001 } from "./background_001.png";
-export { default as bg004 } from "./background_004.png";
-export { default as bg005 } from "./background_005.png";
 export { default as bg009 } from "./background_009.png";
 
 //product
@@ -67,5 +62,3 @@ export { default as accessory7 } from "./sellItem/accessory7.png";
 export { default as accessory8 } from "./sellItem/accessory8.png";
 export { default as accessory9 } from "./sellItem/accessory9.png";
 export { default as accessory10 } from "./sellItem/accessory10.png";
-
-// export { default as pic_1 } from "./pic_1.png";

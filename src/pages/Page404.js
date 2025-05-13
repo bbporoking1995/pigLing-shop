@@ -1,5 +1,3 @@
-import React from "react";
-// import * as pic from "../pic";
 import "../styles/Page404.css";
 
 const Page404 = () => {

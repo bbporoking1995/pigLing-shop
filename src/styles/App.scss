@@ -15,7 +15,6 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 300px;
-    // background: linear-gradient(25deg, #ffa6bb,transparent, #fae897);
     background: #ffffffa4;
     backdrop-filter: blur(10px); 
     box-shadow: 0 2px 5px #0000005d;
@@ -43,7 +42,6 @@ body {
       .nav {
         display: flex;
         list-style: none;
-        // gap: 20px;
         transition: max-height 0.4s ease, opacity 0.4s ease;
         overflow: hidden;
         li {

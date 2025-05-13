@@ -1,4 +1,4 @@
-import React, { useEffect, useContext, useState } from "react";
+import { useEffect, useContext, useState } from "react";
 import { CartContext } from "../CartContext";
 import { Link } from "react-router-dom";
 // import LineRaceChart from "../components/LineRaceChart";
@@ -19,7 +19,7 @@ const FinishPage = () => {
       localStorage.removeItem("purchasedItems");
     }, 100);
   }, [clearCart]);
-  console.log("買了啥好料", purchasedItems);
+  // console.log("買了啥好料", purchasedItems);
 
   return (
     <div>

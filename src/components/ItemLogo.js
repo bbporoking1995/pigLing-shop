@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/ItemLogo.css";
 
 const ItemLogo = ({ src, text }) => {

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { CartContext } from "../CartContext";
 import { BaggageClaim } from "lucide-react";
 import "../styles/CartIcon.css";
