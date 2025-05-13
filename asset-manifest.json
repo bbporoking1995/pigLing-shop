@@ -1,7 +1,21 @@
 {
   "files": {
-    "main.css": "/pigLing-shop/static/css/main.7308d5d7.css",
-    "main.js": "/pigLing-shop/static/js/main.a0955632.js",
+    "main.css": "/pigLing-shop/static/css/main.2d762fb4.css",
+    "main.js": "/pigLing-shop/static/js/main.9170cf76.js",
+    "reactPlayerYouTube.js": "/pigLing-shop/static/js/reactPlayerYouTube.5d556fd4.chunk.js",
+    "reactPlayerSoundCloud.js": "/pigLing-shop/static/js/reactPlayerSoundCloud.1c41d9e9.chunk.js",
+    "reactPlayerVimeo.js": "/pigLing-shop/static/js/reactPlayerVimeo.5ab0b7e4.chunk.js",
+    "reactPlayerMux.js": "/pigLing-shop/static/js/reactPlayerMux.42e4bcee.chunk.js",
+    "reactPlayerFacebook.js": "/pigLing-shop/static/js/reactPlayerFacebook.659a1693.chunk.js",
+    "reactPlayerStreamable.js": "/pigLing-shop/static/js/reactPlayerStreamable.e355d1a3.chunk.js",
+    "reactPlayerWistia.js": "/pigLing-shop/static/js/reactPlayerWistia.7a9b1601.chunk.js",
+    "reactPlayerTwitch.js": "/pigLing-shop/static/js/reactPlayerTwitch.3931500b.chunk.js",
+    "reactPlayerDailyMotion.js": "/pigLing-shop/static/js/reactPlayerDailyMotion.1db2499b.chunk.js",
+    "reactPlayerMixcloud.js": "/pigLing-shop/static/js/reactPlayerMixcloud.9bbc28f8.chunk.js",
+    "reactPlayerVidyard.js": "/pigLing-shop/static/js/reactPlayerVidyard.453708c5.chunk.js",
+    "reactPlayerKaltura.js": "/pigLing-shop/static/js/reactPlayerKaltura.49b1b658.chunk.js",
+    "reactPlayerFilePlayer.js": "/pigLing-shop/static/js/reactPlayerFilePlayer.78d7faa9.chunk.js",
+    "reactPlayerPreview.js": "/pigLing-shop/static/js/reactPlayerPreview.729f4380.chunk.js",
     "static/media/View-2.png": "/pigLing-shop/static/media/View-2.b77c9fa2bc8e027b46bb.png",
     "static/media/background_008.png": "/pigLing-shop/static/media/background_008.a279815c24ba2cba6752.png",
     "static/media/background_007.png": "/pigLing-shop/static/media/background_007.5f4756817b68219a2f39.png",
@@ -16,11 +30,25 @@
     "static/media/HotelLogo_transparent.png": "/pigLing-shop/static/media/HotelLogo_transparent.dc47b79d8ebbd698440a.png",
     "static/media/background_009.png": "/pigLing-shop/static/media/background_009.26b673d21aeecc468645.png",
     "index.html": "/pigLing-shop/index.html",
-    "main.7308d5d7.css.map": "/pigLing-shop/static/css/main.7308d5d7.css.map",
-    "main.a0955632.js.map": "/pigLing-shop/static/js/main.a0955632.js.map"
+    "main.2d762fb4.css.map": "/pigLing-shop/static/css/main.2d762fb4.css.map",
+    "main.9170cf76.js.map": "/pigLing-shop/static/js/main.9170cf76.js.map",
+    "reactPlayerYouTube.5d556fd4.chunk.js.map": "/pigLing-shop/static/js/reactPlayerYouTube.5d556fd4.chunk.js.map",
+    "reactPlayerSoundCloud.1c41d9e9.chunk.js.map": "/pigLing-shop/static/js/reactPlayerSoundCloud.1c41d9e9.chunk.js.map",
+    "reactPlayerVimeo.5ab0b7e4.chunk.js.map": "/pigLing-shop/static/js/reactPlayerVimeo.5ab0b7e4.chunk.js.map",
+    "reactPlayerMux.42e4bcee.chunk.js.map": "/pigLing-shop/static/js/reactPlayerMux.42e4bcee.chunk.js.map",
+    "reactPlayerFacebook.659a1693.chunk.js.map": "/pigLing-shop/static/js/reactPlayerFacebook.659a1693.chunk.js.map",
+    "reactPlayerStreamable.e355d1a3.chunk.js.map": "/pigLing-shop/static/js/reactPlayerStreamable.e355d1a3.chunk.js.map",
+    "reactPlayerWistia.7a9b1601.chunk.js.map": "/pigLing-shop/static/js/reactPlayerWistia.7a9b1601.chunk.js.map",
+    "reactPlayerTwitch.3931500b.chunk.js.map": "/pigLing-shop/static/js/reactPlayerTwitch.3931500b.chunk.js.map",
+    "reactPlayerDailyMotion.1db2499b.chunk.js.map": "/pigLing-shop/static/js/reactPlayerDailyMotion.1db2499b.chunk.js.map",
+    "reactPlayerMixcloud.9bbc28f8.chunk.js.map": "/pigLing-shop/static/js/reactPlayerMixcloud.9bbc28f8.chunk.js.map",
+    "reactPlayerVidyard.453708c5.chunk.js.map": "/pigLing-shop/static/js/reactPlayerVidyard.453708c5.chunk.js.map",
+    "reactPlayerKaltura.49b1b658.chunk.js.map": "/pigLing-shop/static/js/reactPlayerKaltura.49b1b658.chunk.js.map",
+    "reactPlayerFilePlayer.78d7faa9.chunk.js.map": "/pigLing-shop/static/js/reactPlayerFilePlayer.78d7faa9.chunk.js.map",
+    "reactPlayerPreview.729f4380.chunk.js.map": "/pigLing-shop/static/js/reactPlayerPreview.729f4380.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7308d5d7.css",
-    "static/js/main.a0955632.js"
+    "static/css/main.2d762fb4.css",
+    "static/js/main.9170cf76.js"
   ]
 }
