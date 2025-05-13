@@ -1,4 +1,4 @@
-import React from "react";
+import ScrollToTop from "./components/ScrollToTop";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import Page404 from "./pages/Page404";
@@ -12,6 +12,7 @@ import "./styles/App.css";
 function App() {
   return (
     <BrowserRouter basename="/pigLing-shop">
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Homepage />} />
