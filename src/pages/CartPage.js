@@ -156,11 +156,11 @@ const CartPage = ({ min = 1 }) => {
                   提醒：完成結帳後將不予退貨。如果對網頁有興趣的話，可以來信Email：
                   <Copyable>luluhsu.work@gmail.com</Copyable>
                   <br />
-                  看更多作者介紹與作品可以到個人簡歷觀看唷！
+                  更多作者介紹與作品可以到個人簡歷觀看唷！
                 </p>
                 <ExternaLink
                   className="link"
-                  href="https://bbporoking1995.github.io/portfolio/index.html#"
+                  href="https://bbporoking1995.github.io/portfolio/portfolio.html"
                 >
                   <button className="goto_portfolio">
                     <UserRoundSearch /> 前往簡歷

@@ -1,0 +1,40 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(#333, #000);
+}
+
+.loadingio-spinner-bean-eater {
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+.loadingio-spinner-bean-eater::before, .loadingio-spinner-bean-eater::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  background: #58e1e1;
+  border-radius: 50%;
+  animation: spin 1s infinite ease-in-out;
+}
+.loadingio-spinner-bean-eater::after {
+  left: auto;
+  right: 0;
+  background: #9b5de5;
+  animation-delay: 0.5s;
+}
+
+@keyframes spin {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.5);
+    opacity: 0.3;
+  }
+}/*# sourceMappingURL=LoadingAnimation.css.map */

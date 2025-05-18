@@ -2,11 +2,16 @@ import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
+// import Carousel from "../components/Carousel";
 import ItemLogo from "../components/ItemLogo";
-import Carousel from "../components/Carousel";
+import LikeItem from "../components/LikeItem";
+import IntroVideo from "../components/IntroVideo";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import "swiper/css/navigation";
 import * as pic from "../pic";
 import "../styles/HomePage.css";
-import LikeItem from "../components/LikeItem";
 
 const productData = [
   {
@@ -505,7 +510,8 @@ const Homepage = () => {
     <div>
       <div className="homepage_container">
         <div className="slide">
-          <Carousel />
+          {/* <Carousel /> */}
+          <IntroVideo />
         </div>
         <h3 className="product_type_title">商品分類</h3>
         <div className="sell_item">

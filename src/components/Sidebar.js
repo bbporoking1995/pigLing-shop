@@ -7,7 +7,6 @@ const Sidebar = ({ onFilter }) => {
   const { search } = useLocation();
   const hasInit = useRef(false);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (hasInit.current) return;
     hasInit.current = true;
