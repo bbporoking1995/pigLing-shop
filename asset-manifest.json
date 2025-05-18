@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pigLing-shop/static/css/main.7c5abbd0.css",
-    "main.js": "/pigLing-shop/static/js/main.73327ea0.js",
+    "main.js": "/pigLing-shop/static/js/main.dae93dd7.js",
     "reactPlayerYouTube.js": "/pigLing-shop/static/js/reactPlayerYouTube.5d556fd4.chunk.js",
     "reactPlayerSoundCloud.js": "/pigLing-shop/static/js/reactPlayerSoundCloud.1c41d9e9.chunk.js",
     "reactPlayerVimeo.js": "/pigLing-shop/static/js/reactPlayerVimeo.5ab0b7e4.chunk.js",
@@ -31,7 +31,7 @@
     "static/media/background_009.png": "/pigLing-shop/static/media/background_009.26b673d21aeecc468645.png",
     "index.html": "/pigLing-shop/index.html",
     "main.7c5abbd0.css.map": "/pigLing-shop/static/css/main.7c5abbd0.css.map",
-    "main.73327ea0.js.map": "/pigLing-shop/static/js/main.73327ea0.js.map",
+    "main.dae93dd7.js.map": "/pigLing-shop/static/js/main.dae93dd7.js.map",
     "reactPlayerYouTube.5d556fd4.chunk.js.map": "/pigLing-shop/static/js/reactPlayerYouTube.5d556fd4.chunk.js.map",
     "reactPlayerSoundCloud.1c41d9e9.chunk.js.map": "/pigLing-shop/static/js/reactPlayerSoundCloud.1c41d9e9.chunk.js.map",
     "reactPlayerVimeo.5ab0b7e4.chunk.js.map": "/pigLing-shop/static/js/reactPlayerVimeo.5ab0b7e4.chunk.js.map",
@@ -49,6 +49,6 @@
   },
   "entrypoints": [
     "static/css/main.7c5abbd0.css",
-    "static/js/main.73327ea0.js"
+    "static/js/main.dae93dd7.js"
   ]
 }
