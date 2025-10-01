@@ -153,7 +153,7 @@ const CartPage = ({ min = 1 }) => {
                 <p className="cart_note">
                   感謝您於豬布林商城消費！
                   <br />
-                  提醒：完成結帳後將不予退貨。如果對網頁有興趣的話，可以來信Email：
+                  如果對網頁有興趣的話，可以來信Email：
                   <Copyable>luluhsu.work@gmail.com</Copyable>
                   <br />
                   更多作者介紹與作品可以到個人簡歷觀看唷！
@@ -163,7 +163,7 @@ const CartPage = ({ min = 1 }) => {
                   href="https://bbporoking1995.github.io/portfolio/portfolio.html"
                 >
                   <button className="goto_portfolio">
-                    <UserRoundSearch /> 前往簡歷
+                    <UserRoundSearch /> 前往更多作品
                   </button>
                 </ExternaLink>
               </div>

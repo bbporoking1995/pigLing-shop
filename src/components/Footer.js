@@ -9,13 +9,12 @@ const Footer = () => {
   );
   return (
     <div className="footer">
-      <p>集團企業</p>
       <div className="pic">
         <ExternaLink href="https://bbporoking1995.github.io/portfolio/hotel/index.html">
           <img src={pic.hotelLogo} alt="hotelLogo" />
         </ExternaLink>
       </div>
-      <p>Lulu Hsu 2025</p>
+      <p>Lulu Hsu 2025©</p>
     </div>
   );
 };
