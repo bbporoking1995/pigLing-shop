@@ -101,7 +101,7 @@ const Sidebar = ({ onFilter }) => {
 };
 
 const SidebarItem = ({ icon, title, links, onFilter }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   return (
     <li className="sidebar_list">
